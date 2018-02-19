@@ -1,0 +1,149 @@
+/* JQM TV Remote custom CSS */
+
+/* fix visualizzazione tasti mini */
+.ui-mini {
+  margin: 0.5em 0;
+}
+/* fix custom icons */
+.ui-icon-fast-forward:after,
+.ui-icon-play:after,
+.ui-icon-pause:after,
+.ui-icon-forward:after,
+.ui-icon-backward:after,
+.ui-icon-expand:after,
+.ui-icon-arrows-alt:after,
+.ui-icon-arrows-h:after,
+.ui-icon-eject:after,
+.ui-icon-stop:after,
+.ui-icon-circle:after,
+.ui-icon-desktop:after,
+.ui-icon-volume-off:after,
+.ui-icon-indent:after,
+.ui-icon-sign-out:after,
+.ui-icon-sign-in:after,
+.ui-icon-volume-down:after,
+.ui-icon-volume-up:after
+{
+  background-position: 5px center;
+  background-size: 14px auto;
+}   
+
+.icon-red { 
+  color: #ff0000 !important;
+}
+.icon-red:after { 
+  background-color: #ff0000;
+}
+.icon-green { 
+  color: #008000 !important;
+}
+.icon-green:after { 
+  background-color: #008000;
+}
+.icon-yellow { 
+  color: #FAD70A !important;
+}
+.icon-yellow:after { 
+  background-color: #FAD70A;
+}
+.icon-blue { 
+  color: #1B91C4 !important;
+}
+.icon-blue:after { 
+  background-color: #1B91C4;
+}
+
+/*.ui-btn {
+  font-family: 'Michroma', sans-serif;
+  font-size: 12px;
+}*/
+
+.ui-btn-round {
+  border-radius: 71px;
+  max-width: 130px;
+  padding: 37px;
+}
+.ui-btn-round-lg {
+  padding: 52px;
+}
+
+.pad-1 {
+  margin-top: 30px;
+}
+.pad-1 .ui-btn {
+  margin-bottom: 0;
+}
+.pad-2 {}
+.pad-3 {
+  margin-top: 30px;
+}
+.pad-3 .ui-btn {
+  margin-bottom: 0;
+}
+.pad-4 {}
+.pad-4 .ui-btn {
+  margin-top: 25px;
+}
+.pad-5 {}
+.pad-5 .ui-btn {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.pad-6 {}
+.pad-6 .ui-btn {
+  margin-top: 25px;
+}
+.pad-7 {}
+.pad-7 .ui-btn {
+  margin-top: 0;
+}
+.pad-8 {}
+.pad-9 {}
+.pad-9 .ui-btn {
+  margin-top: 0;
+}
+
+.button-mute {
+  margin-top: 38px;
+}
+
+.button-wrap {
+    /*margin-left: 5px;*/
+    /*margin-right: 12px;*/
+}
+.ui-grid-b .ui-block-c .button-wrap {
+  /*margin-right: 0;*/
+}
+
+.ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d, .ui-block-e {
+  padding: 0 3px;
+}
+
+.center {
+    text-align: center;
+}
+
+/*.smaller {
+ font-size: 70%;
+}*/
+
+/* First breakpoint at 480px */
+@media all and (max-width: 480px){
+	/*.ui-btn {
+	  font-family: 'Michroma', sans-serif;
+	  font-size: 10px;
+	}*/
+	.ui-btn-round-lg {
+	  padding: 28px;
+	}
+	.pad-4 .ui-btn {
+	    margin-top: 8px;
+	}
+	.pad-6 .ui-btn {
+	    margin-top: 8px;
+	}
+	.pad-8 .ui-btn {
+	    margin-top: 0;
+	}
+}
+
