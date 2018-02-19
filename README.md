@@ -15,7 +15,7 @@ This project was designed to be used on a Raspberry, requires Apache and PHP for
 
 ## Authors
 
-* Gianluca Cassarino
+* [Gianluca Cassarino](https://github.com/gcassarino)
 
 ## License
 
