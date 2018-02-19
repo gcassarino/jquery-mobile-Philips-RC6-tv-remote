@@ -1,0 +1,383 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta charset="utf-8">
+	<meta name="Description" content="TV remote control">
+	<meta name="Author" content="Gianluca Cassarino - gcassarino at gmail.com">
+	<meta name="Robots" content="index,follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TV Remote</title>
+	<link rel="shortcut icon" sizes="156x138" href="icon.png">
+	<!--<link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>-->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="_assets/css/jqm-tv-remote.css">
+	<link rel="stylesheet" href="_assets/css/icon-pack-custom.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head> 
+<body>
+
+  <div data-role="page" data-theme="b">
+    
+    <div data-role="header">
+      <h1><small>PHILIPS TV 22PFT4000/12</small></h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+	
+	<div data-role="collapsible" data-collapsed="false">
+	  <h3>Parte superiore</h3>
+	    
+	  <div class="ui-grid-d center">
+	      <div class="ui-block-a"><!--<a class="ui-shadow ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext ">Button</a>--></div>
+	      <div class="ui-block-b"><!--<a class="ui-shadow ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext ">Button</a>--></div>
+	      <div class="ui-block-c"><a href="#" class="ui-shadow ui-btn ui-corner-all ui-icon-power ui-btn-icon-notext ui-btn-inline icon-red" data-action="keyPower">Power button</a></div>
+	      <div class="ui-block-d"><!--<a class="ui-shadow ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-notext ">Button</a>--></div>
+	      <div class="ui-block-e"><!--<a class="ui-shadow ui-btn ui-corner-all ui-icon-gear ui-btn-icon-notext ">Button</a>--></div>
+	  </div>
+	  
+	  <div class="ui-grid-b">
+	    <div class="ui-block-a"><div class="button-wrap"><button class="ui-btn ui-icon-stop ui-btn-icon-top ui-shadow ui-corner-all ui-mini" data-action="keyStop"><small>stop</small></button></div></div>
+	    <div class="ui-block-b"><div class="button-wrap"><button class="ui-btn ui-icon-pause ui-btn-icon-top ui-shadow ui-corner-all ui-mini" data-action="keyPause"><small>pause</small></button></div></div>
+	    <div class="ui-block-c"><div class="button-wrap"><button class="ui-btn ui-icon-circle ui-btn-icon-top ui-shadow ui-corner-all ui-mini icon-red" data-action="keyRecord"><small>record</small></button></div></div>
+	  </div>
+	  
+	  <div class="ui-grid-b">
+	    <div class="ui-block-a"><div class="button-wrap"><button class="ui-btn ui-icon-backward ui-btn-icon-top ui-shadow ui-corner-all ui-mini" data-action="keyRewindAlt"><small>rewind</small></button></div></div>
+	    <div class="ui-block-b"><div class="button-wrap"><button class="ui-btn ui-icon-play ui-btn-icon-top ui-shadow ui-corner-all ui-mini" data-action="keyPlay"><small>play</small></button></div></div>
+	    <div class="ui-block-c"><div class="button-wrap"><button class="ui-btn ui-icon-forward ui-btn-icon-top ui-shadow ui-corner-all ui-mini" data-action="keyForwardAlt"><small>forward</small></button></div></div>
+	  </div>
+	  
+	  <div class="ui-grid-b">
+	    <div class="ui-block-a"><div class="button-wrap"><button class="ui-btn ui-icon-bullets ui-btn-icon-top ui-shadow ui-corner-all ui-mini" data-action="keyTvGuide">TV GUIDE</button></div></div>
+	    <div class="ui-block-b"><div class="button-wrap"><button class="ui-btn ui-icon-gear ui-btn-icon-top ui-shadow ui-corner-all ui-mini" data-action="keySetup">SETUP</button></div></div>
+	    <div class="ui-block-c"><div class="button-wrap"><button class="ui-btn ui-icon-bullets ui-btn-icon-top ui-shadow ui-corner-all ui-mini" data-action="keyFormat">FORMAT</button></div></div>
+	  </div>
+	  
+	</div>
+	
+	<div data-role="collapsible" data-collapsed="false">
+	  <h3>Parte centrale</h3>
+	  
+	  <div class="ui-grid-b">
+	    <div class="ui-block-a"><div class="button-wrap"><button class="ui-btn ui-icon-sign-in ui-btn-icon-top ui-shadow ui-corner-all" data-action="keySources">SOURCES</button></div></div>
+	    <div class="ui-block-b"><div class="button-wrap"><button class="ui-btn ui-icon-home ui-btn-icon-top ui-shadow ui-corner-all" data-action="keyHome">HOME</button></div></div>
+	    <div class="ui-block-c"><div class="button-wrap"><button class="ui-btn ui-icon-desktop ui-btn-icon-top ui-shadow ui-corner-all" data-action="keyExit">EXIT</button></div></div>
+	  </div>
+	  
+	  <div class="ui-grid-c">
+	    <div class="ui-block-a"><div class="button-wrap"><button class="ui-btn ui-icon-minus ui-btn-icon-top ui-shadow ui-corner-all ui-mini icon-red" data-action="keyRed"><small>red</small></button></div></div>
+	    <div class="ui-block-b"><div class="button-wrap"><button class="ui-btn ui-icon-minus ui-btn-icon-top ui-shadow ui-corner-all ui-mini icon-green" data-action="keyGreen"><small>green</small></button></div></div>
+	    <div class="ui-block-c"><div class="button-wrap"><button class="ui-btn ui-icon-minus ui-btn-icon-top ui-shadow ui-corner-all ui-mini icon-yellow" data-action="keyYellow"><small>yellow</small></button></div></div>
+	    <div class="ui-block-c"><div class="button-wrap"><button class="ui-btn ui-icon-minus ui-btn-icon-top ui-shadow ui-corner-all ui-mini icon-blue" data-action="keyBlue"><small>blue</small></button></div></div>
+	  </div>
+	  
+	  <hr>
+	  
+	  <fieldset class="ui-grid-b ui-navpad">
+	  
+	    <div class="ui-block-a"><div class="button-wrap pad-1"><button class="ui-btn ui-icon-info ui-btn-icon-top  ui-shadow ui-corner-all ui-mini" data-action="keyInfo">INFO</button></div></div>
+	    <div class="ui-block-b"><div class="button-wrap pad-2"><button class="ui-btn ui-btn-a ui-icon-carat-u ui-btn-icon-top  ui-shadow ui-corner-all" data-action="keyUp"><small>UP</small></button></div></div>
+	    <div class="ui-block-c"><div class="button-wrap pad-3"><button class="ui-btn ui-icon-bullets ui-btn-icon-top  ui-shadow ui-corner-all ui-mini" data-action="keyOptions">OPTIONS</button></div></div>
+	  
+	    <div class="ui-block-a"><div class="button-wrap pad-4"><button class="ui-btn ui-btn-a ui-icon-carat-l ui-btn-icon-top  ui-shadow ui-corner-all" data-action="keyLeft"><small>LEFT</small></button></div></div>
+	    <div class="ui-block-b center"><div class="button-wrap pad-5"><button class="ui-btn ui-btn-a ui-shadow ui-btn-round ui-btn-round-lg ui-btn-inline" data-action="keyOk">OK</button></div></div>
+	    <div class="ui-block-c"><div class="button-wrap pad-6"><button class="ui-btn ui-btn-a ui-icon-carat-r ui-btn-icon-top  ui-shadow ui-corner-all" data-action="keyRight"><small>RIGHT</small></button></div></div>
+	    
+	    <div class="ui-block-a"><div class="button-wrap pad-7"><button class="ui-btn ui-icon-back ui-btn-icon-top  ui-shadow ui-corner-all ui-mini" data-action="keyBack">BACK</button></div></div>
+	    <div class="ui-block-b"><div class="button-wrap pad-8"><button class="ui-btn ui-btn-a ui-icon-carat-d ui-btn-icon-top  ui-shadow ui-corner-all" data-action="keyDown"><small>DOWN</small></button></div></div>
+	    <div class="ui-block-c"><div class="button-wrap pad-9"><button class="ui-btn ui-icon-bars ui-btn-icon-top  ui-shadow ui-corner-all ui-mini" data-action="keyList">LIST</button></div></div>
+	    
+	  </fieldset>
+	   
+	</div>
+	
+	<div data-role="collapsible" data-collapsed="false">
+	  <h3>Parte inferiore e macro</h3>
+	  
+	  <div class="ui-grid-b">
+	    <div class="ui-block-a">
+	      <div data-role="controlgroup">
+		  <button class="ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-left ui-btn-icon-notext" data-action="keyVolumeUp">up</button>
+		  <div class="ui-btn ui-icon-volume-up ui-corner-all ui-btn-icon-notext">volume</div>
+		  <button class="ui-btn ui-corner-all ui-icon-carat-d ui-btn-icon-notext" data-action="keyVolumeDown">down</button>
+	      </div>
+	    </div>
+	    <div class="ui-block-b"><div class="button-wrap button-mute"><button class="ui-btn ui-icon-volume-off ui-btn-icon-top ui-shadow ui-corner-all" data-action="keyVolumeMute"><small>mute</small></button></div></div>
+	    <div class="ui-block-c">
+	      <div data-role="controlgroup">
+		  <button class="ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-left ui-btn-icon-notext" data-action="keyChannelUp">up</button>
+		  <div class="ui-btn ui-icon-grid ui-corner-all ui-btn-icon-notext">channel</div>
+		  <button class="ui-btn ui-corner-all ui-icon-carat-d ui-btn-icon-notext" data-action="keyChannelDown">down</button>
+	      </div>
+	    </div>
+	  </div>
+	  
+	  <div class="ui-grid-b">
+	    <div class="ui-block-a"><div class="button-wrap"><button class="ui-btn ui-shadow ui-corner-all ui-mini" data-action="key1">1 <small>. @</small></button></div></div>
+	    <div class="ui-block-b"><div class="button-wrap"><button class="ui-btn ui-shadow ui-corner-all ui-mini" data-action="key2">2 <small>ABC</small></button></div></div>
+	    <div class="ui-block-c"><div class="button-wrap"><button class="ui-btn ui-shadow ui-corner-all ui-mini" data-action="key3"><small>DEF</small> 3</button></div></div>
+	    
+	    <div class="ui-block-a"><div class="button-wrap"><button class="ui-btn ui-shadow ui-corner-all ui-mini" data-action="key4">4 <small>GHI</small></button></div></div>
+	    <div class="ui-block-b"><div class="button-wrap"><button class="ui-btn ui-shadow ui-corner-all ui-mini" data-action="key5">5 <small>JKL</small></button></div></div>
+	    <div class="ui-block-c"><div class="button-wrap"><button class="ui-btn ui-shadow ui-corner-all ui-mini" data-action="key6"><small>MNO</small> 6</button></div></div>
+	    
+	    <div class="ui-block-a"><div class="button-wrap"><button class="ui-btn ui-shadow ui-corner-all ui-mini" data-action="key7">7 <small>PQRS</small></button></div></div>
+	    <div class="ui-block-b"><div class="button-wrap"><button class="ui-btn ui-shadow ui-corner-all ui-mini" data-action="key8">8 <small>TUV</small></button></div></div>
+	    <div class="ui-block-c"><div class="button-wrap"><button class="ui-btn ui-shadow ui-corner-all ui-mini" data-action="key9"><small>WXYZ</small> 9</button></div></div>
+	    
+	    <div class="ui-block-a"><div class="button-wrap"><button class="ui-btn ui-shadow ui-corner-all ui-mini" data-action="keySubtitle"><small>SUBTITLE</small></button></div></div>
+	    <div class="ui-block-b"><div class="button-wrap"><button class="ui-btn ui-shadow ui-corner-all ui-mini" data-action="key0">0 <small>&#x2423;</small></button></div></div>
+	    <div class="ui-block-c"><div class="button-wrap"><button class="ui-btn ui-shadow ui-corner-all ui-mini" data-action="keyText"><small>TEXT</small></button></div></div>
+	  </div>
+	  
+	  <hr>
+	  
+	  <!-- MACROS -->
+	  <div class="ui-grid-d">
+	      <h3 class="ui-bar ui-bar-b">Macros</h3>
+	      <div class="ui-block-a"><div class="button-wrap"><button class="ui-btn ui-icon-clock ui-btn-icon-top ui-shadow ui-corner-all icon-red" data-action="keySetup,keyRight,keyRight,keyOk,keyDown,keyOk,keyUp,keyUp,keyUp,keyUp,keyUp,keyUp,keyUp,keyUp,keyOk,keyBack,keyBack"><small>+40'</small></button></div></div>
+	      <div class="ui-block-b"><div class="button-wrap"><button class="ui-btn ui-icon-comment ui-btn-icon-top ui-shadow ui-corner-all" data-action="keySetValue">prompt value</button></div></div>
+	      <div class="ui-block-b">
+		<div class="button-wrap">
+		  <button class="ui-btn ui-icon-clock ui-btn-icon-top ui-shadow ui-corner-all confirm" data-rel="popup" data-action="keySetValue" data-value="keySetup,keyRight,keyRight,keyOk,keyDown,keyOk,keyDown,keyDown,keyDown,keyDown,keyDown,keyDown,keyDown,keyDown,keyOk,keyBack,keyBack">data value</button>
+		  <span class="confirm-wrap"><small>es: questa macro annulla il timer +40' precedente</small></span>
+		</div>
+	      </div>
+	      <!--<div class="ui-block-d"><div class="button-wrap"><button class="ui-btn ui-icon-home ui-btn-icon-top ui-shadow ui-corner-all" data-action="tempUp">HOME</button></div></div>-->
+	      <!--<div class="ui-block-e"><div class="button-wrap"><button class="ui-btn ui-icon-desktop ui-btn-icon-top ui-shadow ui-corner-all" data-action="tempUp">EXIT</button></div></div>-->
+	  </div>
+	  
+	</div>
+	
+    </div>
+
+    <div data-role="footer">
+      <!--<h1>Page Footer</h1>-->
+    </div>
+    
+  </div> 
+
+  <script>
+	  
+    $(function() {
+	//alert("jquery ok!");
+    });
+		  
+
+    $(document).on("pageinit",function(){
+	//alert("jqm ok!");
+	
+	function toast(message, dur, type, pos) {
+	
+		console.log("LOG - " + message);
+	
+		if (typeof dur === "undefined" || dur === null) { 
+		  dur = 1000; 
+		}
+		
+		if (typeof type === "undefined" || type === null) { 
+		  type = 'default'; 
+		}
+		
+		if (typeof pos === "undefined" || pos === null) { 
+		  pos = 'default'; 
+		}
+		
+		var $toast = $('<div class="ui-loader ui-overlay-shadow ui-body-b ui-corner-all"><h3>' + message + '</h3></div>');
+
+		if(type == 'default') {
+		  var background = '#2a2a2a';
+		}
+		if(type == 'info') {
+		  var background = '#009ff0';
+		}
+		if(type == 'success') {
+		  var background = '#008000';
+		}
+		if(type == 'error') {
+		  var background = '#ff0000';
+		}
+		
+		if(pos == 'default') {
+		  var left = ($(window).width() - 284) / 2;
+		  var top = $(window).height() / 2 - 20;
+		  var bottom = 'inherit';
+		}
+		
+		if(pos == 'top') {
+		  var left = ($(window).width() - 284) / 2;
+		  var top = 20;
+		  var bottom = 'inherit';
+		}
+		
+		if(pos == 'bottom') {
+		  var left = ($(window).width() - 284) / 2;
+		  var top = 'inherit';
+		  var bottom = 20;
+		}
+		
+		$toast.css({
+		    display: 'block', 
+		    background: background,
+		    opacity: 0.90, 
+		    position: 'fixed',
+		    padding: '7px',
+		    'text-align': 'center',
+		    width: '270px',
+		    left: left,
+		    top: top,
+		    bottom: bottom
+		});
+
+		var removeToast = function(){
+		    $(this).remove();
+		};
+
+		$toast.click(removeToast);
+
+		$toast.appendTo($.mobile.pageContainer).delay(dur);
+		$toast.fadeOut(400, removeToast);
+	}
+      
+	// EVENTI (per tutti i tasti)/EVENTS (for all keys)
+	var int00; // declared here to make it visible to clearInterval.
+	var taphold;
+	// Evento "tap" equivale ad una pressione breve del tasto del telecomando./"Tap" event is equivalent to a short press on the remote control button.
+	// Evento "taphold" equivale ad una pressione lunga del tasto del telecomando./"Taphold" event is equivalent to a long press on the remote control button.
+	// Evento "vmouseup" ripristina impostazioni predefinite dei tasti./Event "vmouseup" restores the default settings of the keys.
+	
+	$(document).on({
+	    "tap" : function(e) { // anche click, vclick?
+	    	    
+		if(taphold){ return; }
+		  
+		var action = $(this).data('action');
+		//toast('Button Clicked: ' + action);
+		var value = false;
+		if (action == 'keySetValue') {
+			var value = $(this).data('value');
+			//console.log(value);
+			if(!value){
+			  value = prompt("Inserire il numero del canale o valori multipli (key) separati da virgola", 'keyChannelUp,keyChannelDown');
+			  if (value === "") {
+			      // user pressed OK, but the input field was empty
+			      toast("user pressed OK, but the input field was empty", 2000, 'info');
+			      return;
+			  } else if (value) {
+			      // user typed something and hit OK
+			  } else {
+			      // user hit cancel
+			      toast("user hit cancel", 2000, 'info');
+			      return;
+			  }
+			} 
+			
+			if($(this).hasClass("confirm")){
+			  var strconfirm = confirm($(this).next(".confirm-wrap").text());
+			  if (strconfirm == false) {
+			    toast("user hit cancel", 2000, 'info');
+			    return;
+			  }
+			}
+		}
+
+		$.ajax({
+			type: 'GET',
+			url: 'act.php',
+			data: { action: action, value: value },
+			beforeSend: function() {
+			    $.mobile.loading('show', {theme:"b", text:"Please wait...", textonly:false, textVisible: false});
+			},
+			complete: function() {
+			    //$.mobile.loading('hide');
+			},
+			success: function (result) {
+			    var msg = $.parseJSON(result);
+			    toast(msg.success, 2000, 'success');
+			    $.mobile.loading('hide');
+			},
+			error: function (request,error) {
+			    //alert('Network error has occurred please try again!');
+			    $.mobile.loading('show', {theme:"b", text:"Network error has occurred please try again", textonly:true, textVisible: true});
+			    toast(error, 2000, 'error');
+			}
+		});	    
+	    
+	    },
+	    "taphold" : function(e) { 
+	    
+		taphold = true;
+		
+		// http://stackoverflow.com/questions/10502383/jquery-calling-click-event-after-taphold-event
+		// https://api.jquerymobile.com/taphold/
+		$.event.special.tap.emitTapOnTaphold = false;
+		
+		var action = $(this).data('action');
+		
+		// comportamento specifico per i tasti "rewind" e "forward" (vedi conf lirc philips)/specific behavior for the "rewind" and "forward" keys (see conf lirc philips)
+		if (action == 'keyRewindAlt') {
+		  $(this).data('action', 'keyRewind');
+		} else if (action == 'keyForwardAlt') {
+		  $(this).data('action', 'keyForward');
+		}
+		
+		var action = $(this).data('action');
+		
+		var value = false;
+		
+		int00 = setInterval(function() { 
+		
+		  $.ajax({
+			  type: 'GET',
+			  url: 'act.php',
+			  data: { action: action, value: value },
+			  beforeSend: function() {
+			      $.mobile.loading('show', {theme:"b", text:"Please wait...", textonly:false, textVisible: false});
+			  },
+			  complete: function() {
+			      //$.mobile.loading('hide');
+			  },
+			  success: function (result) {
+			      var msg = $.parseJSON(result);
+			      toast(msg.success, 1000, 'success', 'bottom');
+			      $.mobile.loading('hide');
+			  },
+			  error: function (request,error) {
+			      //alert('Network error has occurred please try again!');
+			      $.mobile.loading('show', {theme:"b", text:"Network error has occurred please try again", textonly:true, textVisible: true});
+			      toast(error, 1000, 'error');
+			  }
+		  });
+		
+		}, 900); // frequenza di ripetizione invio comando/repeated command send interval
+	    
+	    },
+	    "vmouseup" : function(e) { 
+
+		clearInterval(int00);
+		 $.event.special.tap.emitTapOnTaphold = true;
+		
+		// NECESSARIO per ripristino status predefinito dei tasti indicati specifici/NECESSARY to restore default status of specific keys indicated
+		if ($(this).data('action') == 'keyRewind') {
+		  $(this).data('action', 'keyRewindAlt');
+		} else if ($(this).data('action') == 'keyForward') {
+		  $(this).data('action', 'keyForwardAlt');
+		}
+		
+		// hack per evitare che jqm intercetti un ulteriore evento "tap" sul tasto alla fine del taphold/hack to prevent jqm from intercepting an additional "tap" event on the key at the end of the taphold
+		setTimeout( function() {
+		  taphold = false;
+		}, 900);    
+	    
+	    }
+	}, "[data-action]");
+	
+	
+      
+    });
+  </script>
+  
+  
+</body>
+</html> 
