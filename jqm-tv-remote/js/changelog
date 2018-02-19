@@ -1,0 +1,2 @@
+26nov2017
+changed jquery.mobile-1.4.5.min.js (minimized version) using a slimmed down version without unused components. The file named "jquery.mobile-1.4.5.min.js_FULL" is the full/original version.
