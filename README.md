@@ -1,4 +1,5 @@
-# jquery-mobile-Philips-RC6-tv-remote
+# jquery mobile Philips RC6 tv remote control UI
+
 an implementation of the Philips 22PFT4000/12 tv remote control interface using Jquery Mobile and PHP-Lirc backend.
 
 This interface faithfully reproduces the layout and functions of the remote control [Philips 22PFT4000/12](https://github.com/gcassarino/jquery-mobile-Philips-RC6-tv-remote/blob/master/Philips_22PFT4000_12-remote.jpg) and has been designed to be used together with an infrared diode (from an old tv remote), a web server and a Lirc backend installed on a Raspberry. There are many examples of circuits around the web that show how to connect an IR LED to a Raspberry.
